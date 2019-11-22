@@ -2,8 +2,13 @@
 
 #### 1. Create-React-App
 
-`npx create-react-app PROJECT_NAME` <br />
-`cd PROJECT_NAME`
+```
+npx create-react-app PROJECT_NAME
+```
+
+```
+cd PROJECT_NAME
+```
 
 #### 2. Install Dependencies
 
@@ -32,12 +37,14 @@ module.exports = {
 
 #### 4. Create a Tailwind config file
 
-`npx tailwind init`
+```
+npx tailwind init
+```
 
 #### 5. Create a tailwind.css file
 
-- NOTE: Postcss will use this tailwind.css file to generate the actual .css file used in the project. </br>
-  In this example, this file will be placed a bit out of the way in src/styles/tailwind.css.
+NOTE: Postcss will use this tailwind.css file to generate the actual .css file used in the project. </br>
+In this example, this file will be placed a bit out of the way in src/styles/tailwind.css.
 
 ```
 mkdir -p ./src/styles && touch ./src/styles/tailwind.css
