@@ -1,18 +1,20 @@
-### Installation
+## Installation Instructions
 
-1. Create-React-App
-   `npx create-react-app PROJECT_NAME`
-   `cd PROJECT_NAME`
+### 1. Create-React-App
 
-2. Install Dependencies
+`npx create-react-app PROJECT_NAME`
+`cd PROJECT_NAME`
+
+### 2. Install Dependencies
 
 ```
 npm install tailwindcss postcss-cli autoprefixer --save-dev
 ```
 
-3. Create Postcss config file
-   `touch postcss.config.js`
-   Put this code in it:
+### 3. Create Postcss config file
+
+`touch postcss.config.js`
+Put this code in it:
 
 ```
 module.exports = {
@@ -23,10 +25,11 @@ module.exports = {
 };
 ```
 
-4. Create Tailwind config file
-   `npx tailwind init`
+### 4. Create Tailwind config file
 
-5. Create tailwind.css file.
+`npx tailwind init`
+
+### 5. Create tailwind.css file.
 
 - NOTE: Postcss will use this tailwind.css file to generate the actual .css file used in the project. In this example, this file will be placed a bit out of the way in src/styles/tailwind.css.
 
@@ -41,7 +44,7 @@ Put this code inside:
 @tailwind utilities;
 ```
 
-6. Add additional scripts to 'package.json'.
+### 6. Add additional scripts to 'package.json'.
 
 - Go to 'package.json' and locate the 'scripts' section.
   It should look like this:
@@ -71,7 +74,7 @@ Add this code to the end so that the end result looks like this:
 
 - NOTE: The 'src/styles.css' is what the OUTPUT css file is going to look like.
 
-7. Import our the styles.css into the Index.js.
+### 7. Import our the styles.css into the Index.js.
 
 Index.js:
 
@@ -86,7 +89,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 serviceWorker.unregister();
 ```
 
-8. Done! Here is some example App.js code to see a tailwind styled button.
+### 8. Done! Here is some example App.js code to see a tailwind styled button.
 
 App.js:
 
