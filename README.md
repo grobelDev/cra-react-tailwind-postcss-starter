@@ -13,8 +13,12 @@ npm install tailwindcss postcss-cli autoprefixer --save-dev
 
 #### 3. Create Postcss config file
 
-Create a new postcss.config.js file. <br />
-`touch postcss.config.js` <br />
+Create a new postcss.config.js file: <br />
+
+```
+touch postcss.config.js
+```
+
 Put this code in it:
 
 ```
@@ -26,15 +30,18 @@ module.exports = {
 };
 ```
 
-#### 4. Create Tailwind config file
+#### 4. Create a Tailwind config file
 
 `npx tailwind init`
 
-#### 5. Create tailwind.css file.
+#### 5. Create a tailwind.css file
 
-- NOTE: Postcss will use this tailwind.css file to generate the actual .css file used in the project. In this example, this file will be placed a bit out of the way in src/styles/tailwind.css.
+- NOTE: Postcss will use this tailwind.css file to generate the actual .css file used in the project. </br>
+  In this example, this file will be placed a bit out of the way in src/styles/tailwind.css.
 
-`mkdir -p ./src/styles && touch ./src/styles/tailwind.css`
+```
+mkdir -p ./src/styles && touch ./src/styles/tailwind.css
+```
 
 Put this code inside:
 
@@ -47,8 +54,8 @@ Put this code inside:
 
 #### 6. Add additional scripts to 'package.json'.
 
-- Go to 'package.json' and locate the 'scripts' section.
-  It should look like this:
+Go to 'package.json' and locate the 'scripts' section.
+It should look like this:
 
 ```
   "scripts": {
@@ -73,9 +80,9 @@ Add this code to the end so that the end result looks like this:
   }
 ```
 
-- NOTE: The 'src/styles.css' is what the OUTPUT css file is going to look like.
+NOTE: The 'src/styles.css' is what the OUTPUT css file is going to look like.
 
-#### 7. Import our the styles.css into the Index.js.
+#### 7. Import the styles.css into the Index.js.
 
 Index.js:
 
